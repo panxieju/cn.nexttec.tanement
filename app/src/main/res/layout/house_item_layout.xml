@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/shape_house_item"
+    android:layout_height="wrap_content">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:layout_width="match_parent"
+        android:src="@drawable/sample"
+        android:scaleType="centerCrop"
+        android:id="@+id/house_image"
+        android:layout_height="200dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:id="@+id/house_info_container"
+        android:orientation="vertical"
+        android:background="#ea6b0a">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:id="@+id/house_title"
+            android:text="保利亚奥北苑/三房一厅/月租3200"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:id="@+id/house_source"
+            android:text="来源:58同城  发布日期-2018/8/20"/>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:id="@+id/house_date"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:id="@+id/house_traffic_icon"
+                android:src="@drawable/icon"/>
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:textStyle="italic"
+                android:id="@+id/house_traffic"
+                android:textColor="@color/colorPrimaryDark"
+                android:text=""/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
